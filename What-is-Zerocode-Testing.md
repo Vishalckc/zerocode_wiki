@@ -239,7 +239,7 @@ _(See Kafka DSLs below)_
 The above settings will retry maximum of `5` times with 2sec delay between teh retries.
 
 #### CUSTOMLOG
-`Custom Log` This is a optional field which can be use when user want custom log for particular step.
+`Custom Log` This is an optional field which can be used when user want custom log for particular step.
 ```
            "customLog": "custom message"
 ```
