@@ -17,17 +17,11 @@ In `STRICT` mode, **the response is not allowed to have extra properties** as co
 To use `STRICT` comparison you just need to add the flag `verifyMode` to the test case
 
 For example, if we have an `GET` API `/api/v1/search/persons` which returns the Http status as `200` and the below response payload,
-```json
+```java
+payLoad:
 {
-    "scenarioName": "As simple GET API - Strict validation",
-    "steps": [
-        {
-            "verifyMode":"STRICT",
-            "verify": {
-                 ...
-            }
-        }
-    ]
+   "applicationId": "P010203"
+   "visaType": "Tier2"
 }
 ```
 then we can write the automation Test-case as below.
@@ -40,7 +34,10 @@ steps:
   ...
   verifyMode: STRICT
   verify:
-      ...
+    body: 
+       applicationId:P010203
+       visaType: Tier2
+      
 ``` 
 
 ## Using STRICT mode for Payload verification
@@ -50,10 +47,25 @@ Assertion jsonPath [extra property name]' with actual value 'Unexpected: [extra 
 ```
 
 ## Using LENIENT mode for Payload verification
-The test will pass even if the actual response contains the expected fields plus any extra fields. If there are no  properties in the actual response matching the expected response, then you will receive the following message:
+The test will pass even if the actual response contains the expected fields plus any extra fields. 
+```yaml
+---
+scenarioName: Validate a GET API
+steps:
+-     
+  ...
+  verifyMode: LENIENT
+  verify:
+    body: 
+       visaType: Tier2
+      
+``` 
+
+If there are no  properties in the actual response matching the expected response, then you will receive the following message:
 ```java
 Assertion jsonPath [property name] with actual value '[property name]' did not match the expected value '[property name]'
 ```
+
 
 ## Conclusion
 `STRICT` mode can be very useful in testing use cases where the application wants to restrict the response only to the expected fields both qualitatively as well as quantitatively.
