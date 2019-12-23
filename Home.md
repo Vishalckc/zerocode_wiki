@@ -81,6 +81,14 @@ Lenient and Strict Matching
 ===
 Zerocode provides both [LENIENT and STRICT](https://github.com/authorjapps/zerocode/wiki/Strict-Mode-Payload-Comparison) matching mode for result comparison.
 
+For exact matching:
+```json
+"verifyMode":"STRICT"
+```
+For linient matching:
+```json
+"verifyMode":"LENIENT"
+```
 
 Validation and Verification
 ===
