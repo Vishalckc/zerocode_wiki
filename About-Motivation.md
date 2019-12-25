@@ -41,6 +41,9 @@ JSON is well recognized widely supported by `all IDEs` and hence could prove to 
 
 In fact, many folks were already practicing this kind of approach in a similar manner in their respective Govt, Media, Banking and Retail projects, but was never unified so that the approach could be reused to benefit more and more testers and developers across the program/industries.
 
+Achievement
+===
+
 After the implementation of the agreed approach we found that we were successfully able to achieve the following:
 
 * Multiple `Jenkins Pipeline` integrations was seamless
@@ -52,3 +55,28 @@ After the implementation of the agreed approach we found that we were successful
 The above approach helped the program in a big way. 
 
 Then in the recent years `Zerocode` has unified the approaches with additions of much more testing features to make it easy and efficient for the testing community.
+
+JUnit Way:
+===
+
+
+Parallel Run:
+===
+
+
+Inject Custom Headers
+===
+
+
+Override HTTP Client
+===
+
+
+Inject Custom Properties
+===
+
+Reuse External payload
+===
+
+Conclusion
+===
