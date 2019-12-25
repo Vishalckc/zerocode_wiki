@@ -1,4 +1,5 @@
 + User's Guide
+  + [Motivation](https://github.com/authorjapps/zerocode/wiki/About-Motivation)
   + [What is Zerocode](https://github.com/authorjapps/zerocode/wiki/What-is-Zerocode-testing)
   + [Hello World Examples](https://github.com/authorjapps/zerocode/wiki/Zerocode-Hello-World-Projects)
   + [An User journey(CRUD operation)- Simple n easy](https://github.com/authorjapps/zerocode/wiki/User-journey:-Create,-Update-and-GET-Employee-Details)
