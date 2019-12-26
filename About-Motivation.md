@@ -1,6 +1,6 @@
 The Problem
 ===
-Automated testing of REST APIs or SOAP APIs in a [declarative fashion](https://ieeexplore.ieee.org/document/5070714) is still difficult in Java compared to OSS frameworks provided by other programming languages like [Python](https://github.com/svanoort/pyresttest#sample-test), JavaScript. These languages provide YAML or JSON or Fluent API interfaces or [DSLs](https://en.wikipedia.org/wiki/Domain-specific_language) for easily writing test scenarios.
+Automated testing of REST APIs or SOAP APIs in a [declarative fashion](https://ieeexplore.ieee.org/document/5070714) is still difficult in Java compared to the OSS frameworks provided by other programming languages like [Python](https://github.com/svanoort/pyresttest#sample-test), JavaScript. These languages provide YAML or JSON or Fluent API interfaces or [DSLs](https://en.wikipedia.org/wiki/Domain-specific_language) for easily writing test scenarios.
 
 Zerocode brings similar simplicity to Java to validate a REST APIs/SOAP APIs in a declarative and configurable way.
 
@@ -35,13 +35,13 @@ Over several brainstorming sessions, automation testers and developers came to a
 * Large numbers of tests can be well organized for env specific regression packs
 * Configurable for multiple environments (LAPTOP, DEV/DIT/CI, SIT, UAT, PRE-PROD etc)
 
-The outcome of the sessions was to consider a `steps based` scenario build-up approach with JUnit, like Cucumber/JBehave where the underlying test and test data is picked from a referenced `JSON file` instead of a `feature` file. 
+The outcome of the sessions was to consider a `steps based` scenario build-up approach with JUnit, like Cucumber/JBehave/Pyresttest where the underlying test and test data is picked from a referenced `JSON file` or `Text File` instead of a `feature` file. 
 
 JSON is well recognized widely supported by `all IDEs` and hence could prove to be a good approach.
 
-In fact, many folks were already practicing this kind of approach in a similar manner in their respective Govt, Media, Banking and Retail projects, but was never unified so that the approach could be reused to benefit more and more testers and developers across the program/industries.
+In fact, many folks were already practicing this kind of approach in a similar manner in their respective Govt, Media, Banking and Retail projects, but was never unified so that the approach could be reused to address wide variety of testing problems and benefit more and more testers and developers across the program/industries.
 
-Achievement
+Solution
 ===
 
 After the implementation of the agreed approach we found that we were successfully able to achieve the following:
@@ -54,7 +54,7 @@ After the implementation of the agreed approach we found that we were successful
 
 The above approach helped the program in a big way. 
 
-Then in the recent years `Zerocode` has unified the approaches with additions of much more testing features to make it easy and efficient for the testing community.
+Then in recent years `Zerocode` has redesigned the DSLs and unified the approaches with feedback from the OpenSource community, by adding much more real-life testing features to make it easy and efficient.
 
 JUnit Way:
 ===
