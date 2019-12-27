@@ -122,20 +122,6 @@ db_host_url=jdbc:postgresql://localhost:31435/postgres
 db_username=replicaowner
 db_password=password
 
-## ---------------------------
-##   DB Host configs - MySql
-## ---------------------------
-#db_host_url=jdbc:mysql://localhost:3306/empdb
-#db_username=admin
-#db_password=secret00
-
-## ---------------------------
-##   DB Host configs - Oracle
-## ---------------------------
-#db_host_url=jdbc:oracle://128.3.3.9:2102/empdb
-#db_username=root
-#db_password=pass00rd
-
 ```
 
 #### Executor code
