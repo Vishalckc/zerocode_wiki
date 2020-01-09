@@ -7,10 +7,9 @@
 
 3. **AC2**- Write down the steps you performed which led to this issue or incident you are reporting
 
-4. **AC3**- Provide all steps to reproduce the issue - Best is to put your configs(or code changes) into the [HelloWorld](https://github.com/authorjapps/zerocode-hello-world) repo by forking it and push the changes to the forked repo.
-
-> Easiest is to fork the HelloWorld repo and push your changes to it. 
+4. **AC3**- Provide all steps to reproduce the issue - Best is to provide your configs(or code changes) and the scenario file(stripping out any business-sensitive information)
 
 5. Clearly capture into the story/ticket what is actual-result and what is the expected-result
+   + In case of a Feature request or a Tool request - Please provide enough details step wise
 
 6. If you are simply asking a question or want to clarify something, please explain the issue in terms of what you want to achieve or which use-case you want to solve. Please explain this with clarity.
