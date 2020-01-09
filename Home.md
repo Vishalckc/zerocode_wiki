@@ -6,6 +6,7 @@ Features
 ===
    * [Introduction](#introduction)
    * [Super Easy and Zero Complexity](#super-easy-and-reduced-complexity)
+   * [Validators Vs Matchers](https://github.com/authorjapps/zerocode/wiki/Validators-and-Matchers)
    * [Lenient and Strict Matching](#lenient-and-strict-matching)
    * [Validation and Verification](#validation-and-verification)
    * [Load Testing Made Easy](#load-testing-made-easy)
