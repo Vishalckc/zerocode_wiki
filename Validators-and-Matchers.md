@@ -1,3 +1,12 @@
+### Table of Contents
+
+- [Validators](#validators)
+  * [Field validator](#field-validator)
+  * [Block validator](#block-validator)
+- [Matchers](#matchers)
+  * [STRICT Matchers](#strict-matchers)
+  * [LENIENT Matchers](#lenient-matchers)
+
 Validators
 ===
 Validators are used to validate a field and its value in an API response by directly pointing to the position of the field using JSON Path. This way we can entirely skip the arranging of the fields in the object hierarchy for the purpose of validations.
@@ -70,3 +79,11 @@ steps:
     body: 
        visaType: Tier2
 ```
+
+Conclusion
+===
+We have to choose carefully between which validator or which matcher we need to use depending on our business use-case.
+
+Note:
+
+_Framework expects either to use `validators` or `matchers` in a step, but not both. This means a `Scenario` can contain some steps with validators and some with matchers_
