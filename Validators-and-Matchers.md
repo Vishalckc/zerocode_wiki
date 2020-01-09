@@ -6,6 +6,7 @@
 - [Matchers](#matchers)
   * [STRICT Matchers](#strict-matchers)
   * [LENIENT Matchers](#lenient-matchers)
+- [Conclusion](#conclusion)
 
 Validators
 ===
