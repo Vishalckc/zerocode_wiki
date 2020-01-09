@@ -12,6 +12,7 @@
   + [Strict Mode](https://github.com/authorjapps/zerocode/wiki/Strict-Mode-Payload-Comparison)
   + [Lenient Mode](#TODO)
   + [Available Matchers](https://github.com/authorjapps/zerocode/wiki#matchers)
+  + [Validators vs Matchers](https://github.com/authorjapps/zerocode/wiki/Validators-and-Matchers)
 
 + Zerocode Tokens
   + [LOCALDATE.TODAY](https://github.com/authorjapps/zerocode/wiki/Token:-LocalDate-Today)
