@@ -24,11 +24,19 @@ Smart Contributors
 
 + **Arun V**(Java Team Lead and Sr Developer, Bangalore, India)
 
++ **BartRobeyns**(Java, Tech Lead/Sr Developer,Belgium)
+
 + **Dev K**(Sr Test Architect and Automation Tester, Govt, London, UK)
 
 + **Dinesh V**(Full Stack/Java/React-Js/Node-Js/Angular-Js/DB Sr Developer, London, UK)
 
 + **Dinesh Vi**(Artist and Java Developer, LA, USA)
+
++ **James N**(Java, Developer, UK)
+
++ **Justin B**(Java, Malta)
+
++ **Kristin S**(Java, Colorado, USA)
 
 + **Neeraj S**(Java/Kotlin Tech Lead/Developer/Test Architect, Banking, London, UK)
 
@@ -46,10 +54,5 @@ Smart Contributors
 
 + **Virendra J**(Kafka/BigData/AWS/Spark Architect, Tech Lead/Sr Developer, London, UK)
 
-+ **jbonn360**(Java)
-
-+ **BartRobeyns**(Java, Tech Lead/Sr Developer,Belgium)
-
-+ **James Neate - jneate**(Java, Developer, UK)
 
 
