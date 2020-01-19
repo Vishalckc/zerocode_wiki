@@ -81,7 +81,11 @@ View the JSON or YAML based test-scenario below.
                     "name": "Oliver",
                     "postcode": "EC2 9XY"
                 }
-            },
+            }, 
+            "retry": {
+                "max": 3, //<--- configure to your "retry" requirement or skip it
+                "delay": 1000
+             },
             "verify": {
                 "status": 201,
                 "body": {
@@ -133,6 +137,9 @@ steps:
 - name: create_emp
   url: "/api/v1/employees"
   method: POST
+  retry:
+    max: 3
+    delay: 1000
   request:
     headers:
       Content-Type: application/json
