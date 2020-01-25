@@ -22,6 +22,7 @@ Developer Guide
 * [HelloWorld examples <g-emoji class="g-emoji" alias="raised_hands" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64c.png">🙌</g-emoji>](https://github.com/authorjapps/zerocode/wiki/Zerocode-Hello-World-Projects)
 * [A HTTP REST scenario or an user journey](https://github.com/authorjapps/zerocode/wiki/User-journey:-Create,-Update-and-GET-Employee-Details)
 * [Running one or more scenarios](#running-a-scenario)
+* [Using System Env variables and properties](https://github.com/authorjapps/zerocode/wiki/Reading-System-Properties-and-Environment-Variables-in-Zerocode-Test-Steps)
 * [Performance Testing - Auto HTTP load generation](https://github.com/authorjapps/zerocode/wiki/Load-or-Performance-Testing-(IDE-based))
 * [Performance Testing - JUnit4](https://github.com/authorjapps/performance-tests#multi-scenario-parallel-load)
 * [Performance Testing - JUnit5](https://github.com/authorjapps/zerocode/wiki/JUnit5-Jupiter-Parallel-Load-Extension)
@@ -803,12 +804,12 @@ JUnit5 Jupiter engine's easy and declarative approach to parameterized testing i
 Credits to Jetbrains for IDE licenses
 ![Jetbrains](https://github.com/authorjapps/zerocode/blob/master/images/jetbrains.svg).
 
-Credits to the team members at HomeOffice(GOV.UK), Mizuho Bank, CMC Markets, HSBC Bank, Barclays and Zohocorp whose comments have helped to shape the lib.
-
 ### Attributions
-This project was initially inspired by [HomeOffice's](https://www.gov.uk/government/organisations/home-office) digital-transformation project's REST API validators and custom BlockJUnit4ClassRunners/Listeners for Feature/Integration Testing.
+Credits to the team members at HomeOffice(GOV.UK), Mizuho Bank, CMC Markets, HSBC Bank, Barclays, and Zohocorp whose comments and inspirations have helped to a great extent to shape the lib especially around REST API validators, custom JUnit4 Runners/Listeners, result matchers, and custom HTTP builders.
 
 Powered by [open-source software](https://github.com/authorjapps/zerocode/wiki/Powered-by-open-source-software).
+
+Visit our [contributors](#TODO) list here.
 
 References, Discussions and articles
 ===
