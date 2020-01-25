@@ -1,6 +1,6 @@
 Welcome to the zerocode wiki. Use the sidebar on the right to locate a topic or use **"Ctrl+f"** to find a topic. 👉
 
-If you are not sure where to start, why not take a look at the [What is Zerocode](https://github.com/authorjapps/zerocode/wiki/What-is-Zerocode-testing), then jump to the [Developer's Guide]() below.
+If you are not sure where to start, why not take a look at the [What is Zerocode](https://github.com/authorjapps/zerocode/wiki/What-is-Zerocode-testing), then jump to the [Developer's Guide](#developer-guide) below.
 
 Features
 ===
@@ -730,10 +730,47 @@ then visit this open-source [pyresttest](https://github.com/svanoort/pyresttest#
         - compare: {raw_body:"", comparator:contains, expected: 'Baltar' }  # Tests on raw response
 ```
 
+or 
+
+```json
+{
+    "test": {
+        "name": "Create/update person",
+        "url": "/api/person/1/",
+        "method": "PUT",
+        "body": {
+            "first_name": "Gaius",
+            "id": 1,
+            "last_name": "Baltar",
+            "login": "gbaltar"
+        },
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "validators": [
+            {
+                "compare": {
+                    "header": "content-type",
+                    "comparator": "contains",
+                    "expected": "json"
+                }
+            },
+            {
+                "compare": {
+                    "raw_body": "",
+                    "comparator": "contains",
+                    "expected": "Baltar"
+                }
+            }
+        ]
+    }
+}
+```
+
 The [Quick-Start](https://github.com/svanoort/pyresttest/blob/master/quickstart.md) guide explains how to bring up a REST end point and run the tests.
 
 Zerocode equivalent of the above example is
-+ `validators` / `comparator` is equivalent to `verify` / `assertions`
++ `validators` / `comparator` is equivalent to  `validators` / `verify` / `assertions`
 + `raw_body` is equivalent to `rawBody`
 
 YAML and JSON Slice And Dice
@@ -767,6 +804,9 @@ Credits to Jetbrains for IDE licenses
 ![Jetbrains](https://github.com/authorjapps/zerocode/blob/master/images/jetbrains.svg).
 
 Credits to the team members at HomeOffice(GOV.UK), Mizuho Bank, CMC Markets, HSBC Bank, Barclays and Zohocorp whose comments have helped to shape the lib.
+
+### Attributions
+This project was initially inspired by [HomeOffice's](https://www.gov.uk/government/organisations/home-office) digital-transformation project's REST API validators and custom BlockJUnit4ClassRunners/Listeners for Feature/Integration Testing.
 
 Powered by [open-source software](https://github.com/authorjapps/zerocode/wiki/Powered-by-open-source-software).
 
