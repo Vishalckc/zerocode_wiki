@@ -30,6 +30,7 @@ Developer Guide
 * [Parameterized Scenario](#parameterized-scenario)
 * [Using Custom HttpClient](#using-custom-httpclient)
 * [Sending query params to HTTP hosts](#sending-query-params-to-http-hosts)
+* [File upload using HTTP API](#TODO... Pick this from the Wiki Page or Raise a ticket for a new wikipage)
 * [Http Basic-Auth security validation](#http-basic-auth-security-validation)
 * [Boundary End Point Mocking](#boundary-end-point-mocking)
 * [Externalizing RESTful host and port](#externalizing-restful-host-and-port)
