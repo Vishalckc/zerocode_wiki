@@ -6,7 +6,7 @@ What are System Properties
 ===
 The Java platform uses a Properties object (subclass of Hashtable) to maintain key value pair, where both the key and the value are strings to store information about the local system and configuration. 
 The default System Properties include basic information like current user, JRE version, file path separator, etc.
-System properties can be set on the Java command line using the `-Dpropertyname=value` syntax or added/modified at runtime using `System.setProperty(String key, String value)`
+System properties can be set on the Java command line using `-Dpropertyname=value` or added/modified at runtime using `System.setProperty(String key, String value)`
 To get a system property you can use `System.getProperty(String key)` or `System.getProperty(String key, String defaultValue).`
 
 To use System Property 
@@ -17,7 +17,7 @@ To use System Property
     "steps": [
         {
             "name": "get_api_call",
-            "url":  "${SYSTEM.PROPERTY.hostname}/test/123",
+            "url":  "${SYSTEM:PROPERTY:hostname}/test/123",
              ...
         }  
      ]
@@ -25,7 +25,7 @@ To use System Property
 ```
 
 
-Replaces with the value of the system property. E.g. `hostname ` resolves to `http://localhost:9998 `. If no property exists then the place holder remains in place i.e. `${SYSTEM.PROPERTY.hostname}`
+Replaces with the value of the system property. E.g. `hostname ` resolves to `http://localhost:9998 `. If no property exists then the place holder remains in place i.e. `${SYSTEM:PROPERTY:hostname}`
 The  value of hostname can be provided at runtime using –Dhostname=http://localhost:9998 as command line argument
 
 
@@ -42,7 +42,7 @@ Environment variables are immutable
     "steps": [
         {
             "name": "get_api_call",
-            "url":  ${SYSTEM.ENV.HOSTNAME}/test/123",
+            "url":  ${SYSTEM:ENV:HOSTNAME}/test/123",
             ...
         }
         
@@ -53,17 +53,17 @@ Environment variables are immutable
 
 When Do We Need Them in Test Scenarios
 ===
-The choice between the options is often a question of scope. 
-Using System Variable can be used to define hostname, port etc where the developer/tester can run the test(s) against different ports(27018, 27019 etc) or different hosts(dev, sit, uat/preprod etc) or typically in Jenkins pipeline by maven runtime args via -D.
+To use System Environment or System properties depends on the scope of the variable and the use case.
 
-Using Environment Variables, the same application can be deployed to multiple machines to run different instances and can be configured at the Operating System level or even in AWS or Azure Consoles. Removing the needing to rebuild application to update config. Hence, using Environment variables to store information like username, password can be used where the data might change.
+System Variable can be used to define hostname, port etc where the developer/tester can run the test(s) against different ports(8080, 8090 etc) or different hosts(dev, sit, uat, preprod etc), typically in Jenkins pipeline by maven runtime args via -D.
+
+Environment Variables, the same application can be deployed to multiple machines to run different instances and can be configured at the Operating System level, AWS, Azure Consoles. Removing the needing to rebuild application to update config. Hence, using Environment variables to store information like username, password can be used where the data might change.
 
 
 Conclusion
 ===
 We have learnt here how to use the system properties and system env variables. Visit these issues to explore more about their usecases.
 Issue # [282](https://github.com/authorjapps/zerocode/issues/282)
-
 Issue # [248](https://github.com/authorjapps/zerocode/issues/248)
 
 
