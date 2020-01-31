@@ -55,7 +55,7 @@ When Do We Need Them in Test Scenarios
 ===
 To use System Environment or System properties depends on the scope of the variable and the use case.
 
-System properties can be used to define hostname, port etc where the developer/tester can run the test(s) against different ports(8080, 8090 etc) or different hosts(dev, sit, uat, preprod etc), typically in Jenkins pipeline by maven runtime args via -D.
+System properties can be used to define hostname, port etc where the developer/tester can run the test(s) against different ports(8080, 8090 etc) or different hosts(dev, sit, uat, preprod etc), typically in Jenkins pipeline by maven runtime args via `-D`.
 
 Using Environment Variables, the same application can be deployed to multiple machines to run different instances and can be configured at the Operating System level, AWS, Azure Consoles. Removing the needing to rebuild application to update config. Hence, using Environment variables to store information like username, password can be used where the data might change.
 
