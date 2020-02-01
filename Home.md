@@ -22,7 +22,7 @@ Developer Guide
 * [HelloWorld examples <g-emoji class="g-emoji" alias="raised_hands" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f64c.png">🙌</g-emoji>](https://github.com/authorjapps/zerocode/wiki/Zerocode-Hello-World-Projects)
 * [A HTTP REST scenario or an user journey](https://github.com/authorjapps/zerocode/wiki/User-journey:-Create,-Update-and-GET-Employee-Details)
 * [Running one or more scenarios](#running-a-scenario)
-* [Using System Env variables and properties](https://github.com/authorjapps/zerocode/wiki/Reading-System-Properties-and-Environment-Variables-in-Zerocode-Test-Steps)
+* [Using System Env variables and System properties](https://github.com/authorjapps/zerocode/wiki/Reading-System-Properties-and-Environment-Variables-in-Zerocode-Test-Steps)
 * [Performance Testing - Auto HTTP load generation](https://github.com/authorjapps/zerocode/wiki/Load-or-Performance-Testing-(IDE-based))
 * [Performance Testing - JUnit4](https://github.com/authorjapps/performance-tests#multi-scenario-parallel-load)
 * [Performance Testing - JUnit5](https://github.com/authorjapps/zerocode/wiki/JUnit5-Jupiter-Parallel-Load-Extension)
