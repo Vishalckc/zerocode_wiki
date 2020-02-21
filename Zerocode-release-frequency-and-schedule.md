@@ -4,14 +4,14 @@ From 21-Feb-2020 onwards we will be scheduling the new release once in every qua
 
 Tentative dates
 ===
-|Date       |Release Type|
-| ------------- |:-------------:|
-| 2020-02-21      | Minor release |
-| 2020-05-21      | Minor release |
-| 2020-08-21      | Minor release |
-| 2020-11-21      | Minor release |
-| 2021-02-21      | **Major** release |
-| 2021-05-21      | Minor release |
+|Date           |Release Type       |      Status|
+| ------------- |:-------------:|:-----:|
+| 2020-02-21      | Minor release |Done|
+| 2020-05-21      | Minor release | |
+| 2020-08-21      | Minor release | |
+| 2020-11-21      | Minor release | |
+| 2021-02-21      | **Major** release | |
+| 2021-05-21      | Minor release | |
 
 
 _Note_
