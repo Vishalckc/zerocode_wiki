@@ -21,7 +21,7 @@ To use System Property in a `Zerocode step`
     "steps": [
         {
             "name": "get_api_call",
-            "url":  "${SYSTEM:PROPERTY:hostname}/test/123",
+            "url":  "${SYSTEM.PROPERTY:hostname}/test/123",
              ...
         }  
      ]
@@ -29,7 +29,7 @@ To use System Property in a `Zerocode step`
 ```
 
 
-Replaces with the value of the system property. E.g. `hostname ` resolves to `http://localhost:9998 `. If no property exists then the place holder remains in place i.e. `${SYSTEM:PROPERTY:hostname}`
+Replaces with the value of the system property. E.g. `hostname ` resolves to `http://localhost:9998 `. If no property exists then the place holder remains in place i.e. `${SYSTEM.PROPERTY:hostname}`
 The  value of hostname can be provided at runtime using `–Dhostname=http://localhost:9998` as the command line argument.
 
 
@@ -46,7 +46,7 @@ Environment variables are immutable.
     "steps": [
         {
             "name": "get_api_call",
-            "url":  ${SYSTEM:ENV:HOSTNAME}/test/123",
+            "url":  ${SYSTEM.ENV:HOSTNAME}/test/123",
             ...
         }
         
