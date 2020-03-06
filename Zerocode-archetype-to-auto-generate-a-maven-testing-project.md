@@ -55,8 +55,12 @@ The final command should look like below:
 
 Optional step
 ===
-This may not be needed for a real or live project. The purpose of the above archetype is to generate a ready-made maven project to make it easy for a developer to start with automation.
+The sample test scenario [get_api_200](https://github.com/authorjapps/zerocode/wiki/Zerocode-archetype-to-auto-generate-a-maven-testing-project#sample-cli) works fine i.e. the test turns green.
+ 
+
+The other two samples "post" and "put" may not be relevant to your project, but can be used as a reference only or to manipulate with your payload/headers. The purpose of the above archetype is to generate a ready-made maven project to make it easy for a developer to start with automation.
     
 Add personal GitHub token to test files:
 +    In both `post_api_200.json` and `put_api_200.json`, substitute your own GitHub token for the placeholder.
 +    In `put_api_200.json`, also update the name of the owner in the URL to your GitHub username
+
