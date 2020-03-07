@@ -17,7 +17,7 @@
 Example
 ===
 ### Wrong way:
-_Note here: There is no business scenario or usecase provided. This makes difficult to understand the scenario you are trying to automate._
+_Note here: There is no business scenario or usecase provided. This makes difficult for our collaborators to understand the scenario you are trying to automate._
 
 As an automation tester
 
