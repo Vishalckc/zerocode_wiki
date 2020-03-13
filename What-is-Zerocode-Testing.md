@@ -59,15 +59,15 @@ Advantages of Declarative Testing
 + According to [IEEE](https://ieeexplore.ieee.org/document/5070714) - 
 > Preliminary experience with declarative testing suggests that the modular characteristics of the paradigm may significantly enhance the ability of a testing effort to keep pace with the evolution of a software application during the application's development process.
 
-+ Instead of writing code to achieve the testing goals, we write the test intentions including _assertions_.<br/>
++ Instead of writing code `how` to achieve the testing goals, we write `what` to achieve in the test intentions i.e. the test input and the expectations<br/>
 
-+ Here the framework, behind the scene, generates the necessary code to do the job for us e.g. API calls, DB calls etc. 
++ Here the framework, behind the scene, handles the execution via necessary code to do the job for us e.g. API calls, DB executions, producing/consuming from Kafka topics etc
 
-+ In this style we attempt to minimize or eliminate side effects by describing what the `test` must accomplish in terms of the business functionality, rather than describe how to accomplish it via programming or coding.
++ In this style we attempt to minimize or eliminate side effects by describing what the `test` must accomplish in terms of the business functionality, rather than describe how to accomplish it via programming or coding
 
 <br/>
 
-> That makes the automation a lot easy and clean.
+> That makes the test automation a lot easy and clean.
 
 <br/>
 
@@ -75,7 +75,7 @@ In the _Declarative Style_ **we don't need to write** any of the below.
 + The Http Client (or Kafka Client) calls for REST APIs
 + Request payload parsing
 + Response payload parsing
-+ Code for assertions e.g. comparing actual vs expected response
++ Code for assertions/verifications e.g. comparing actual vs expected response
 
 | Declarative Style                            | Traditional Style                                        |
 | :-------------------------------------------- | :-------------------------------------------------------- |
