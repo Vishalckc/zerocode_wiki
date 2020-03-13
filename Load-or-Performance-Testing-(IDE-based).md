@@ -4,7 +4,10 @@ But if you are already familiar with the concepts of load/stress generation on t
 > Visit this page for [JUnit5](https://github.com/authorjapps/zerocode/wiki/JUnit5-Jupiter-Parallel-Load-Extension) Jupiter parallel load generation. Super easy! Give it a try!
 
 ## Why using an IDE ?
-Performance testing could be simple, easy and flexible to match our project need if it is based from our IDE!
+Performance testing could be simple, easy and flexible to match our project need if it is based from our IDE! 
+
+IDE is e.g. Eclipse, IntelliJ or VSCode etc.
+
 It's **easy to fit into our CI Build pipe line** due to simplicity of **maven** and **JUnit** based project.
 
 - [Download or Browse Demo Test Maven project](https://github.com/authorjapps/zerocode/wiki/Load-or-Performance-Testing-(IDE-based)#download-or-browse-demo-project) section towards the trail of this page
