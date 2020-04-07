@@ -81,6 +81,9 @@
   + [Picking host, port, user, password details](https://github.com/authorjapps/zerocode/wiki/Sample-DB-SQL-Executor#config-properties)
   + [Running DB executor and asserting SQL result sets](https://github.com/authorjapps/zerocode/wiki/Sample-DB-SQL-Executor)
 
++ More+
+  + [Reusing step via step file(s)](https://github.com/authorjapps/zerocode/wiki/Reusing-Single-and-Multiple-Step-Files)
+
 + Extensions
   + [In-Memory Spring-Boot Integration testing](https://github.com/authorjapps/spring-boot-integration-test)
   + [Load testing a Cassandra Application(Spring)](https://github.com/authorjapps/zerocode-spring-junit)
