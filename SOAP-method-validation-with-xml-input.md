@@ -1,3 +1,7 @@
+
+SOAP Testing
+===
+
 You can invoke SOAP as below which is already supported by zerocode lib, or you can write your own SOAP executor using Java(optionally). 
 
 > _If you want to write custom handling- Then, read section "Calling java methods(apis) for specific tasks"_
@@ -75,3 +79,57 @@ Response:
 *responseTimeStamp:2018-02-16T05:38:35.254
 *Response delay:653.0 milli-secs
  ```
+
+Convert XML to JSON and assert using JSON Path
+===
+See an example [here(Click this)](https://github.com/authorjapps/zerocode/blob/master/core/src/test/resources/integration_test_files/soap/soap_endpoint_soap_action_post_200.json).
+
+
+Note:
+The 2nd step has converted the XML to JSON, then the usual way, you can validate your response.
+
+
+```json
+{
+    "scenarioName": "GIVEN a SOAP end point WHEN I invoke a method with a request XML, THEN I will get the SOAP response in XML",
+    "steps": [
+        {
+            "name": "invoke_currency_conversion",
+            "url": "/CurrencyConvertor.asmx",
+            "operation": "POST",
+            "request": {
+                "headers": {
+                    "Content-Type": "text/xml; charset=utf-8",
+                    //"SOAPAction": "\"http://www.webserviceX.NET/ConversionRate\""
+                    "SOAPAction": "http://www.webserviceX.NET/ConversionRate"
+                },
+                "body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <ConversionRate xmlns=\"http://www.webserviceX.NET/\">\n      <FromCurrency>AFA</FromCurrency>\n      <ToCurrency>GBP</ToCurrency>\n    </ConversionRate>\n  </soap:Body>\n</soap:Envelope>"
+            },
+            "assertions": {
+                "status": 200,
+                "rawBody": "$CONTAINS.STRING:<ConversionRateResult>-1</ConversionRateResult>"
+            }
+        },
+        {
+            "name": "response_xml_to_json",
+            "url": "org.jsmart.zerocode.converter.MimeTypeConverter",
+            "operation": "xmlToJson",
+            "request": "${$.invoke_currency_conversion.response.rawBody}",
+            "assertions": {
+                "soap:Envelope": {
+                    "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+                    "xmlns:soap": "http://schemas.xmlsoap.org/soap/envelope/",
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "soap:Body": {
+                        "ConversionRateResponse": {
+                            "xmlns": "http://www.webserviceX.NET/",
+                            "ConversionRateResult": -1
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
+
+```
