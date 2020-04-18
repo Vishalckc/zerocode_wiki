@@ -1,3 +1,5 @@
+>                                          By Haeley Griffin
+
 ## Contents
    * [Introduction](#introduction)
    * [Common FAQs](#common-faqs)
