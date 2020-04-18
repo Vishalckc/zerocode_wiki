@@ -1,3 +1,14 @@
+## Contents
+   * [Introduction](#introduction)
+   * [Common FAQs](#common-faqs)
+       * [What is COVID-19?](#what-is-covid-19)
+       * [Who is most at risk?](#who-is-most-at-risk)
+       * [How do I find out where the outbreak is?](#how-do-i-find-out-where-the-outbreak-is)
+       * [What are the symptoms?](#what-are-the-symptoms)
+       * [What can I do to protect myself?](#what-can-i-do-to-protect-myself)
+   * [Health tips do at home](#healthy-tips-do-at-home)
+   * [Healthy food habits to boost immunity](#healthy-food-habits-to-boost-immunity)
+   * [Healthy breathing practices](#healthy-breathing-practices)
 
 Introduction
 ===
