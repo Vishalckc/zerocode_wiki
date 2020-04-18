@@ -1,4 +1,4 @@
->                                          By Haeley Griffin
+>                          By Haeley Griffin
 
 ## Contents
    * [Introduction](#introduction)
