@@ -1,3 +1,4 @@
+>                   Anish Jha
 ## Contents
    * [Purpose of a step file](#purpose-of-a-step-file)
    * [Using a single Step File](#using-a-single-step-file)
@@ -181,16 +182,7 @@ get_customers.json
 
 ```
 
-e.g.
-//TODO
-
-
 Conclusion
 ===
-// Point to a working example in the [HelloWorld repo](https://github.com/authorjapps/zerocode-hello-world)
-
-//TODO: Add an example here please and provide the link to that example.
-
-
-e.g.
-//TODO
+Look for a working example in the [HelloWorld repo](https://github.com/authorjapps/zerocode-hello-world)
+(Work in progress, an example to be added in the above repo)
