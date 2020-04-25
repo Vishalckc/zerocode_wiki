@@ -29,7 +29,7 @@ Developer Guide
 * [Kafka Validation](https://github.com/authorjapps/zerocode/wiki/Kafka-Testing-Introduction)
 * [Parameterized Scenario](#parameterized-scenario)
 * [Using Custom HttpClient](#using-custom-httpclient)
-* [Sending query params to HTTP hosts](#sending-query-params-to-http-hosts)
+* [Sending query params to HTTP methods](#sending-query-params-to-http-methods)
 * [File upload using HTTP API](#TODO)
 * [Http Basic-Auth security validation](#http-basic-auth-security-validation)
 * [Boundary End Point Mocking](#boundary-end-point-mocking)
@@ -258,7 +258,7 @@ public class HelloWorldCustomHttpClientSuite {
 }
 ```
 
-Sending query params to HTTP hosts
+Sending query params to HTTP methods
 ===
 You can pass query params in the usual way in the URL e.g. `?page=1&page_size=5` -or-
 You can pass them in the request as below.
