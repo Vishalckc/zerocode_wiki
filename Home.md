@@ -272,6 +272,7 @@ You can pass them in the request as below.
             }
 ...
 ```
+> It is also possible combine sending params in the url and in the request.
 
 Http Basic-Auth security validation
 ===
