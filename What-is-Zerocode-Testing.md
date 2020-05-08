@@ -236,7 +236,9 @@ _(See Kafka DSLs below)_
                 "delay": 2000
             },
 ```
-The above settings will retry maximum of `5` times with 2sec delay between teh retries.
+The above settings will retry maximum of `5` times with 2sec delay between the retries.
+
+If one fo the retries goes success(meaning if the actual response matches the expected response), then the framework will stop retrying further and come out of that step marking the it as `PASSED`.
 
 #### CUSTOMLOG
 `Custom Log` This is an optional field which can be used when user want custom log for particular step.
