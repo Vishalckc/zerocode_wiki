@@ -22,7 +22,42 @@ todo
 
 Using `${RANDOM.NUMBER.FIXED}`
 ===
-todo
+sample step:
+
+`{
+      "name": "mytest",
+      "url": "/orders",
+      "operation": "POST",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "orders": [
+            {
+              "orderId": "${RANDOM.NUMBER}",
+              "amount": 5,
+              "productName": "product1"
+            },
+            {
+              "orderId": "${RANDOM.NUMBER}",
+              "amount": 10,
+              "productName": "product2"
+            }
+          ]
+        }
+      },
+
+      "retry":{
+        "max": 2,
+        "delay": 500
+      },
+
+      "assertions": {
+        "status": 200
+
+      }
+    }`
 
 
 Using `${RANDOM.NUMBER:10}`
