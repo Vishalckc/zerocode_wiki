@@ -74,6 +74,64 @@ every instance of RANDOM.NUMBER is unique
 Using `${RANDOM.NUMBER.FIXED}`
 ===
 sample step:
+` {
+      "name": "mytest",
+      "url": "/orders",
+      "operation": "POST",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "orders": [
+            {
+              "orderId": "${RANDOM.NUMBER.FIXED}",
+              "amount": 5,
+              "productName": "product1"
+            },
+            {
+              "orderId": "${RANDOM.NUMBER.FIXED}",
+              "amount": 10,
+              "productName": "product2"
+            }
+          ]
+        }
+      },
+
+      "retry":{
+        "max": 2,
+        "delay": 500
+      },
+
+      "assertions": {
+        "status": 200
+
+      }
+    },`
+
+after `RANDOM.NUMBER.FIXED` placeholder are replaced we get the following request:
+
+`request:
+{
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8"
+  },
+  "body" : {
+    "orders" : [ {
+      "orderId" : "6598115625161692428",
+      "amount" : 5,
+      "productName" : "product1"
+    }, {
+      "orderId" : "6598115625161692428",
+      "amount" : 10,
+      "productName" : "product2"
+    } ]
+  }
+} 
+`
+
+
+`RANDOM.NUMBER.FIXED` placeholders get the same random number value within the step
 
 
 
@@ -82,7 +140,7 @@ sample step:
 
 Using `${RANDOM.NUMBER:10}`
 ===
-todo : Explain the limit... 
+we can limit random numbers' length. In this case random numbers length(digit count) would be 10. 
 
 Conclusion
 ===
