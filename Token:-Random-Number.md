@@ -17,14 +17,7 @@ to do
 
 Using `${RANDOM.NUMBER}`
 ===
-todo
-
-
-Using `${RANDOM.NUMBER.FIXED}`
-===
-sample step:
-
-`{
+`"steps":[{
       "name": "mytest",
       "url": "/orders",
       "operation": "POST",
@@ -48,16 +41,43 @@ sample step:
         }
       },
 
-      "retry":{
-        "max": 2,
-        "delay": 500
-      },
+  
 
       "assertions": {
         "status": 200
 
       }
-    }`
+    }]`
+
+after replacing RANDOM.NUMBER placeholders,we get the following request:
+`request:
+{
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8"
+  },
+  "body" : {
+    "orders" : [ {
+      "orderId" : "6432473468588586502",
+      "amount" : 5,
+      "productName" : "product1"
+    }, {
+      "orderId" : "6249704932535842532",
+      "amount" : 10,
+      "productName" : "product2"
+    } ]
+  }
+} `
+
+every instance of RANDOM.NUMBER is unique
+
+
+Using `${RANDOM.NUMBER.FIXED}`
+===
+sample step:
+
+
+
+
 
 
 Using `${RANDOM.NUMBER:10}`
