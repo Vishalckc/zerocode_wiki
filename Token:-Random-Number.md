@@ -150,4 +150,4 @@ We can limit random numbers' length. In this case random numbers length(digit co
 
 Conclusion
 ===
-Please visit the "Hello World" test scenarios which have working examples of these random-number usages.
+Please visit the "Hello World" repo which has some working examples of these random-number usages.
