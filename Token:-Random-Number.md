@@ -8,16 +8,24 @@
 
 Flavors of Random Number
 ===
-to do
+We can use `${RANDOM.NUMBER}` or `${RANDOM.NUMBER.FIXED}` depending on our business usecases
 
 Usecases of Random Number
 ===
-to do
+Use case1: 
+`${RANDOM.NUMBER}`
 
+If we want the an ID or any field or part of a field to be a random value inside a scenario, and this value is further `random` if used more than once inside that scenario
+
+Use case2:
+`${RANDOM.NUMBER.FIXED}` 
+
+If we want an ID or any field or part of a field to be a random value inside a scenario, and this value is `fixed` or same, if used more than once inside that scenario
 
 Using `${RANDOM.NUMBER}`
 ===
-`"steps":[{
+```JavaScript
+"steps":[{
       "name": "mytest",
       "url": "/orders",
       "operation": "POST",
@@ -40,17 +48,16 @@ Using `${RANDOM.NUMBER}`
           ]
         }
       },
-
-  
-
       "assertions": {
         "status": 200
 
       }
-    }]`
+    }]
+```
 
 after replacing RANDOM.NUMBER placeholders,we get the following request:
-`request:
+```JavaScript
+request:
 {
   "headers" : {
     "Content-Type" : "application/json;charset=UTF-8"
@@ -66,15 +73,17 @@ after replacing RANDOM.NUMBER placeholders,we get the following request:
       "productName" : "product2"
     } ]
   }
-} `
+} 
+```
 
-every instance of RANDOM.NUMBER is unique
+Every instance of RANDOM.NUMBER is unique
 
 
 Using `${RANDOM.NUMBER.FIXED}`
 ===
-sample step:
-` {
+Sample step:
+```
+ {
       "name": "mytest",
       "url": "/orders",
       "operation": "POST",
@@ -107,11 +116,13 @@ sample step:
         "status": 200
 
       }
-    },`
+    },
+```
 
 after `RANDOM.NUMBER.FIXED` placeholder are replaced we get the following request:
 
-`request:
+```
+request:
 {
   "headers" : {
     "Content-Type" : "application/json;charset=UTF-8"
@@ -128,20 +139,15 @@ after `RANDOM.NUMBER.FIXED` placeholder are replaced we get the following reques
     } ]
   }
 } 
-`
+```
 
-
-`RANDOM.NUMBER.FIXED` placeholders get the same random number value within the step
-
-
-
-
+`RANDOM.NUMBER.FIXED` placeholders get the `same` random number value within the step
 
 
 Using `${RANDOM.NUMBER:10}`
 ===
-we can limit random numbers' length. In this case random numbers length(digit count) would be 10. 
+We can limit random numbers' length. In this case random numbers length(digit count) would be 10. 
 
 Conclusion
 ===
-Prodive the link to a "Hello World" test scenario which an end user can see-in-action ie a working code
+Please visit the "Hello World" test scenarios which have working examples of these random-number usages.
