@@ -8,8 +8,17 @@ This archetype helps a developer or a Dev-In-Test automation-engineer to set up 
 
 Sample CLI
 ===
+```bash
+mvn archetype:generate \
+-DarchetypeGroupId=org.jsmart \
+-DarchetypeArtifactId=zerocode-maven-archetype \
+-DarchetypeVersion=1.3.20-SNAPSHOT \
+-DgroupId=com.myproject \
+-DartifactId=my-api-testing \
+-Dversion=1.0.0-SNAPSHOT
+``` 
+OLD version:
 ```java
-
 $ mvn archetype:generate -DarchetypeGroupId=zerocode.archetype -DarchetypeArtifactId=zerocodeArchetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.xbox -DartifactId=game-app
 ```
 
