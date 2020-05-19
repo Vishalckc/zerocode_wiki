@@ -1,7 +1,7 @@
 root: ./
 
 ​structure:  
-    readme: readme-draft.md 
+    readme: Home.md
     summary: SUMMARY.md​
     
 redirects:  
