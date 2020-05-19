@@ -40,6 +40,7 @@
   + [Consume raw message](https://github.com/authorjapps/zerocode/wiki/Consume-RAW-message)
   + [Produce JSON message](https://github.com/authorjapps/zerocode/wiki/Produce-JSON-message)
   + [Consume JSON message](https://github.com/authorjapps/zerocode/wiki/Consume-JSON-message)
+  + [Produce and consume XML message](https://github.com/authorjapps/zerocode/wiki/Producing-and-consuming-XML-message-to-and-from-a-Kafka-topic)
   + [Produce avro message]()
   + [Consume avro message]()
   + [KSQL in action]()
