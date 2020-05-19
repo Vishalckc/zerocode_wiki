@@ -4,6 +4,7 @@
    * [Using ${RANDOM.UUID}](#using-randomuuid)
    * [Using ${RANDOM.UUID.FIXED}](#using-randomuuidfixed)
    * [Conclusion](#conclusion)
+   * [Available since](#available-since)
 
 Flavors of UUID
 ===
@@ -26,3 +27,8 @@ todo
 Conclusion
 ===
 todo - Provide the link to a "Hello World" test scenario which an end user can see-in-action ie a working code
+
+
+Available since
+===
+V 1.3.19
