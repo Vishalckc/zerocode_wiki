@@ -5,6 +5,7 @@
    * [Using ${RANDOM.NUMBER.FIXED}](#using-randomnumberfixed)
    * [Using ${RANDOM.NUMBER:10}](#using-randomnumber10)
    * [Conclusion](#conclusion)
+   * [Available since](#available-since)
 
 Flavors of Random Number
 ===
