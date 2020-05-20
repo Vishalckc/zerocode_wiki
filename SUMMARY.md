@@ -11,7 +11,7 @@
 + Matchers
   + [Strict Mode](./Strict-Mode-Payload-Comparison.md)
   + [Lenient Mode](#TODO.md)
-  + [Available Matchers](./matchers.md)
+  + [Available Matchers](./Home#matchers)
   + [Validators vs Matchers](./Validators-and-Matchers.md)
 
 + Zerocode Tokens
