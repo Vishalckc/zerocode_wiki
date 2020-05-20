@@ -87,7 +87,7 @@
   + [Reusing step via step file(s)](./Reusing-Single-and-Multiple-Step-Files.md)
 
 + Extensions
-  + [In-Memory Spring-Boot Integration testing](https://github.com/authorjapps/spring-boot-integration-test.md)
+  + [In-Memory Spring-Boot Integration testing](https://github.com/authorjapps/spring-boot-integration-test)
   + [Load testing a Cassandra Application(Spring)](./zerocode-spring-junit.md)
   + [Gradle - Charts and Reports](./Gradle-build-for-JUnit-Smart-Chart-and-CSV-Reports.md)
   + [Kotlin Integration Testing - Simlified via Zerocode](https://dzone.com/articles/kotlin-spring-bootspring-data-h2-db-rest-api) 
